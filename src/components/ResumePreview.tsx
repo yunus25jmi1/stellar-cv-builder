@@ -1,5 +1,6 @@
 
 import { Card } from "@/components/ui/card";
+import { FileText } from "lucide-react";
 
 interface ResumePreviewProps {
   data: any;
