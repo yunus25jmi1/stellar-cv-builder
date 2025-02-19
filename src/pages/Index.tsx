@@ -2,6 +2,7 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { ChevronRight, FileText, Sparkles, Download } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Index = () => {
   return (
@@ -17,9 +18,11 @@ const Index = () => {
             Modern templates and expert suggestions at your fingertips.
           </p>
           <div className="flex gap-4 justify-center">
-            <Button size="lg" className="bg-primary hover:bg-primary/90">
-              Get Started
-              <ChevronRight className="ml-2 h-4 w-4" />
+            <Button size="lg" className="bg-primary hover:bg-primary/90" asChild>
+              <Link to="/builder">
+                Get Started
+                <ChevronRight className="ml-2 h-4 w-4" />
+              </Link>
             </Button>
             <Button size="lg" variant="outline">
               View Templates
